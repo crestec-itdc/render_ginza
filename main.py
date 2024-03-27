@@ -25,7 +25,8 @@ def read_item(item_id: int, q: str = None):
 def update_item(item: Item):
     print(item.value)
 
-    nlp = spacy.load('ja_ginza_electra') # or ja_ginza (in case with low memory)
+#    nlp = spacy.load('ja_ginza_electra') # or ja_ginza (in case with low memory)
+    nlp = spacy.load('ja_ginza') # or ja_ginza (in case with low memory)
     #f = open('out.txt','r',encoding='UTF-8')
     #src=f.read()
     src=item.value
